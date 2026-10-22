@@ -46,7 +46,7 @@ jobs:
       run: bash scripts/cassandra-integration-test.sh ${{ matrix.version.major }} ${{ matrix.version.schema }} ${{ matrix.jaeger-version }}
 
     - name: Upload coverage to codecov
-      uses: ./.github/actions/upload-codecov
+      uses: ./github/actions/upload-codecov
       with:
         files: cover.out
         flags: cassandra-${{ matrix.version.major }}-${{ matrix.jaeger-version }}
