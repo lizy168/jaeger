@@ -1,6 +1,7 @@
 name: CIT Cassandra
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
 
