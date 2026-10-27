@@ -1,6 +1,7 @@
 name: CIT Badger
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
 
